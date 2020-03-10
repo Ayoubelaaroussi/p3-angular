@@ -14,6 +14,13 @@ import { CategoriComponent } from './component/categori/categori.component';
 import { BestArticlesComponent } from './component/best-articles/best-articles.component';
 import { BestArticleComponent } from './component/best-article/best-article.component';
 
+
+// import
+import {RouterModule} from '@angular/router';
+import { HomeComponent } from './component/home/home.component';
+import { LoginComponent } from './component/login/login.component';
+import { RegisterComponent } from './component/register/register.component'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,13 +33,20 @@ import { BestArticleComponent } from './component/best-article/best-article.comp
     CategoriesComponent,
     CategoriComponent,
     BestArticlesComponent,
-    BestArticleComponent
+    BestArticleComponent,
+    HomeComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+    // import
+    RouterModule.forRoot([])
   ],
   providers: [],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }
